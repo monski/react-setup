@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom'
 import Home from './Home'
 import PropsParent from "./Props/ParentComponent";
 import PassingData from "./Props/PassingDataFromChild";
+import TodoList from "./Todo/TodoList";
 
 const mapStateToProps = state => {
   return {
@@ -42,6 +43,9 @@ class RoutesContainer extends React.Component {
                 <li className="nav-item">
                   <a className="nav-link" href="#/props-sample">Props</a>
                 </li>
+                <li className="nav-item">
+                  <a className="nav-link" href="#/todo">Todo Apps</a>
+                </li>
               </ul>
               <form className="form-inline mt-2 mt-md-0">
                 <input className="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search" />
@@ -58,6 +62,7 @@ class RoutesContainer extends React.Component {
           <Route exact path="/main" component={Home}/>
           <Route exact path="/props-sample" component={PropsParent}/>
           <Route path="/props-sample/pass" component={PassingData}/>
+          <Route exact path="/todo" component={TodoList} />
         </main>
 
         <footer className="footer">
