@@ -5,6 +5,7 @@ import {
 } from '../constants/actionTypes'
 import { Route } from 'react-router-dom'
 import Home from './Home'
+import MapFunction from './MapFunction'
 import PropsParent from "./Props/ParentComponent";
 import PassingData from "./Props/PassingDataFromChild";
 import State from './State'
@@ -42,6 +43,9 @@ class RoutesContainer extends React.Component {
                   <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link" href="#/mapfunction">Map Function</a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link" href="#/props-sample">Props</a>
                 </li>
                 <li className="nav-item">
@@ -63,6 +67,7 @@ class RoutesContainer extends React.Component {
         <br />
         <main role="main" className="container">
           <Route exact path="/" component={Home}/>
+          <Route exact path="/mapfunction" component={MapFunction}/>
           <Route exact path="/main" component={Home}/>
           <Route exact path="/props-sample" component={PropsParent}/>
           <Route path="/props-sample/pass" component={PassingData}/>
