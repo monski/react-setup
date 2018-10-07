@@ -23,13 +23,13 @@ export class AppEntry extends Component {
     }
   }
   render() {
-      return (
-        <ErrorBoundary>
-          <Switch>
-            <RoutesContainer />
-          </Switch>
-        </ErrorBoundary>
-      )
+    return (
+      <ErrorBoundary>
+        <Switch>
+          <RoutesContainer />
+        </Switch>
+      </ErrorBoundary>
+    )
   }
 }
 

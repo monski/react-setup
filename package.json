@@ -4,7 +4,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git-link"
+    "url": "https://github.com/monski/react-setup.git"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
