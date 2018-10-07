@@ -18,3 +18,4 @@ return new WebpackDevServer(webpack(config), {
   }
   console.log(`Server running at http://localhost:${port}/`);
 });
+
