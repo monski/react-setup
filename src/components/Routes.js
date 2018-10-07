@@ -7,6 +7,7 @@ import { Route } from 'react-router-dom'
 import Home from './Home'
 import PropsParent from "./Props/ParentComponent";
 import PassingData from "./Props/PassingDataFromChild";
+import State from './State'
 import TodoList from "./Todo/TodoList";
 
 const mapStateToProps = state => {
@@ -44,6 +45,9 @@ class RoutesContainer extends React.Component {
                   <a className="nav-link" href="#/props-sample">Props</a>
                 </li>
                 <li className="nav-item">
+                  <a className="nav-link" href="#/state">State</a>
+                </li>
+                <li className="nav-item">
                   <a className="nav-link" href="#/todo">Todo Apps</a>
                 </li>
               </ul>
@@ -62,6 +66,7 @@ class RoutesContainer extends React.Component {
           <Route exact path="/main" component={Home}/>
           <Route exact path="/props-sample" component={PropsParent}/>
           <Route path="/props-sample/pass" component={PassingData}/>
+          <Route exact path="/state" component={State}/>
           <Route exact path="/todo" component={TodoList} />
         </main>
 
